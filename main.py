@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 from third_parties.linkedin import scrape_linkedin_profile
 from agents.linkedin_lookup_agent import lookup as linkedin_lookup_agent
 
-def ice_break_with(name: str) -> str:
+def describe_linkedin_profile(name: str) -> str:
     linkedin_username = linkedin_lookup_agent(name=name)
 
     linkedin_data = scrape_linkedin_profile(linkedin_profile=linkedin_username)
@@ -33,5 +33,5 @@ def ice_break_with(name: str) -> str:
 
 if __name__ == "__main__":
     load_dotenv()
-    output = ice_break_with(name="Eden Marco Udemy")
+    output = describe_linkedin_profile(name="Eden Marco Udemy")
     print(output)
