@@ -33,5 +33,5 @@ def describe_linkedin_profile(name: str) -> str:
 
 if __name__ == "__main__":
     load_dotenv()
-    output = describe_linkedin_profile(name="Eden Marco Udemy")
+    output = describe_linkedin_profile(name="Anshul Choudhary Optum Chegg")
     print(output)
