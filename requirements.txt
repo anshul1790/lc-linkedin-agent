@@ -6,3 +6,5 @@ langchainhub
 black
 python-dotenv
 requests
+flask
+langsmith
